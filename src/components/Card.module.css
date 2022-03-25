@@ -1,0 +1,126 @@
+.card_container{
+    width: 100%;
+justify-content:center;
+align-items: center;
+display: flex;
+flex-wrap: wrap;       
+padding-top: 40px;
+}
+
+.card img{
+    width: 100px;
+}
+
+.btnCard{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;    
+}
+
+.btnCard button{
+    background: rgba(134, 134, 134, 0);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.card_titulo{
+    
+    
+    border-radius: 0px 15px 0 0 ;    
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,222,235,0) 100%);
+    
+    width: 100%;    
+    padding: 10px;
+    text-align: left;
+    
+    
+
+}
+
+.card_titulo span{
+    font-size: 20px;
+}
+
+.card{    
+    border-radius: 0 15px 15px ;    
+    padding: 15px;
+    background: rgb(134,134,134);
+background: linear-gradient(270deg, rgba(134,134,134,0) 0%, rgba(186,186,186,1) 100%);
+    
+    
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;   
+    
+}
+
+.card a, .card_titulo a{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.rain{
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgb(46, 95, 102);
+    color: white;
+    margin: 10px;    
+}
+
+.gen{
+    background-color: chartreuse;
+    border-radius: 15px;
+    padding: 30px;
+    
+    color: white;
+    margin: 10px;   
+}
+
+.clouds{
+    border-radius: 15px;
+    padding: 30px;    
+    margin: 10px;
+    background-color: grey;
+}
+
+.card_cold{    
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgb(157, 214, 231);
+    margin: 10px;
+       
+}
+
+.card_hot{    
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgb(192, 91, 91);
+    margin: 10px;
+       
+}
+
+a{    
+    color: white;
+    margin-right: 10px;
+}
+
+.flag{
+    width: 2rem;
+    margin-left: 10px;
+}
+
+.cardDetails{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}

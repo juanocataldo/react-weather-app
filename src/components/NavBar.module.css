@@ -1,0 +1,19 @@
+.nav{
+    background-color: rgb(78, 66, 66);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.btnAdd{
+    background-color: rgb(166, 251, 151);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navInput{
+    background-color: red;
+}

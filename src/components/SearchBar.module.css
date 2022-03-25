@@ -1,0 +1,28 @@
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.btnAdd{
+    background-color: rgb(205, 253, 142);
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btnAdd:hover{
+    background-color: rgb(11, 117, 85);
+    color: white;    
+}
+
+.navigation{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-inline-end: auto;
+}

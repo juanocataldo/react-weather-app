@@ -1,0 +1,13 @@
+.detail_container{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+
+.detail{
+    background-color: rgba(75, 107, 107, 0.397);
+    width: 12rem;
+    padding: 5px;    
+    color: white;
+}
+
