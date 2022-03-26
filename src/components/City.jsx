@@ -18,8 +18,8 @@ export default function City({cities}){
         <hr />
         <p>Temperatura: <h3>{city[0].main.temp}</h3></p> 
         <p>Temperatura mínima: <h3>{city[0].main.temp_min}</h3></p>          
-        <p>Temperatura mínima: <h3>{city[0].main.temp_max}</h3></p>         
-        <p>Temperatura mínima: <h3>{city[0].main.feels_like}</h3></p> 
+        <p>Temperatura máxima: <h3>{city[0].main.temp_max}</h3></p>         
+        <p>Sensación térmica: <h3>{city[0].main.feels_like}</h3></p> 
       </div>
       
       : 'No se encontraron resultados'}
