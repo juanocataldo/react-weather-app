@@ -12,25 +12,36 @@ let ciudades = []
 function App() {
   function searchWeather(city) {
     if (city) {
+      console.log('entro al 1 fecth')
       fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=471b195b6090f81db63756b5f43c9bf7&units=metric`)
         .then(response => response.json())
         .then(data => {        
-          console.log(data);
-          ciudades.push(data);          
-          setWeather(data)
+          console.log('entro al 2 fecth')
+
+          console.log(data)
+          if(!data.hasOwnProperty('message')){
+            console.log('todo ok')
+            setError('')          
+
+            ciudades.push(data);          
+            setWeather(data)
+          }else{
+            setError('Not found')
+          }
+
         })
-        .catch(error => console.log(error))
+        
     }
   }
 
   const [weather, setWeather] = useState('')
-  console.log(ciudades)
+  const [error, setError] = useState('')
 
 
   function cityFilter(id){
     ciudades.filter((ciudad) => ciudad.id === id)
   }
-
+console.log("ERROR ->", error)
   return (
     <div className="App">
       
@@ -45,8 +56,10 @@ function App() {
         <Route exact path='/'>
       {/* <Card  /> */}      
       <div className={`${style.card_container}`}>
-      { ciudades.length > 0 ? ( ciudades.map(ciudad => <Card ciudad={ciudad.name} temp={ciudad.main.temp} min={ciudad.main.temp_min} max={ciudad.main.temp_max} icon={ciudad.weather[0].icon} wallp={ciudad.weather[0].main} id={ciudad.id} country={ciudad.sys.country}/>)) : <div><h3 style={{color:"white"}}>Agregar ciudades para ver su clima</h3></div>}
+      { ciudades.length > 0 && error == '' ? ( ciudades.map(ciudad => <Card ciudad={ciudad.name} temp={ciudad.main.temp} min={ciudad.main.temp_min} max={ciudad.main.temp_max} icon={ciudad.weather[0].icon} wallp={ciudad.weather[0].main} id={ciudad.id} country={ciudad.sys.country}/>)) : <div><h3 style={{color:"white"}}>Add cities</h3></div>}
+      <br></br>
       </div>  
+      { error !== '' ? <div className='bg-danger'><p>Error: {error}</p> </div> : null}
       </Route>
       </Switch>
     </div>
