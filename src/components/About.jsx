@@ -28,7 +28,7 @@ export default function Default(){
                     <span style={{color:'rgb(251, 44, 99)'}}>Instagram</span>
                     </div>
                     <div className="socialBlock">
-                    <a href="http://instagram.com/juanocataldo" class="fa fa-linkedin"></a>
+                    <a href="https://www.linkedin.com/in/juan-manuel-cataldo-pavan-a68a9720" class="fa fa-linkedin"></a>
                     <span style={{color:'aqua'}}>Linkedin</span>
                     </div>
                     </div>
