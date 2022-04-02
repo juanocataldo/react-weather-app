@@ -14,6 +14,7 @@ export default function SearchBar({pushCity}){
     function pushIt(e){
         e.preventDefault()
         pushCity(input)
+        setInput("") 
     }
 
     return (
@@ -25,7 +26,7 @@ export default function SearchBar({pushCity}){
                 </div>
                 <form className="d-flex" onSubmit={pushIt}>
                     <div className="col-sm-6">
-                        <input type="text" placeholder="Ingresar ciudad" onChange={modInput} value={input} className="form-control form-control-sm me-2" />
+                        <input type="text" placeholder="Ingresar ciudad" onChange={modInput} value={input} className="form-control form-control-sm me-2" id='a' />
 
                     </div>
                     <div className="col-sm-6">

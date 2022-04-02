@@ -20,6 +20,20 @@ export default function Default(){
                     <p></p>
                 </div>
             </div>
+                <div className="row m-4 feed presentCard">
+                    <h4>Contact</h4>
+                    <div className="social col-sm">
+                    <div className="socialBlock">
+                    <a href="http://instagram.com/juanocataldo" class="fa fa-instagram"></a>
+                    <span style={{color:'rgb(251, 44, 99)'}}>Instagram</span>
+                    </div>
+                    <div className="socialBlock">
+                    <a href="http://instagram.com/juanocataldo" class="fa fa-linkedin"></a>
+                    <span style={{color:'aqua'}}>Linkedin</span>
+                    </div>
+                    </div>
+                    
+                </div>
         </div>
     )
 
