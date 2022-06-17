@@ -1,6 +1,6 @@
 # My first React App
 
-I did this app while i was learning React in 'Henry' bootcamp.
+I did this app while i was learning React in 'Henry' bootcamp. It's an app to search city weathers.
 
 ## Want to try it?
 Clone it, open it in VS Code, run 'npm install' to install all the dependencies and then 'npm start'.
