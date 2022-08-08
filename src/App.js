@@ -12,17 +12,12 @@ let ciudades = []
 function App() {
   function searchWeather(city) {
     if (city) {
-      console.log('entro al 1 fecth')
       fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=471b195b6090f81db63756b5f43c9bf7&units=metric`)
         .then(response => response.json())
         .then(data => {        
-          console.log('entro al 2 fecth')
-
-          console.log(data)
           if(!data.hasOwnProperty('message')){
             console.log('todo ok')
-            setError('')          
-
+            setError('')
             ciudades.push(data);          
             setWeather(data)
           }else{
@@ -41,14 +36,13 @@ function App() {
   function cityFilter(id){
     ciudades.filter((ciudad) => ciudad.id === id)
   }
-console.log("ERROR ->", error)
   return (
     <div className="App">
       
         
       <SearchBar pushCity={searchWeather}/>
       <Switch>
-        {/* <Route exact path='/'></Route> */}
+        {/* <Route exact path='/'></Route> */}        
         <Route path='/about'><About /></Route>
         <Route path='/ciudad/:id'>
           <City cities={ciudades}/>

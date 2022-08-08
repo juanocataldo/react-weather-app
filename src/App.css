@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-image: url('../src/img/wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100vh;
+  
 }
 
 .App-logo {
