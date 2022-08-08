@@ -6,13 +6,9 @@
     padding: 20px;
 }
 
-.btnAdd{
+.btnapp{
     background-color: rgb(205, 253, 142);
-    padding: 6px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 5px;
-    cursor: pointer;
+    color: black;
 }
 
 .btnAdd:hover{

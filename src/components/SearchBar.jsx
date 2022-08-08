@@ -1,6 +1,6 @@
 import style from './SearchBar.module.css'
 import {useState} from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function SearchBar({pushCity}){
 
@@ -14,21 +14,27 @@ export default function SearchBar({pushCity}){
     function pushIt(e){
         e.preventDefault()
         pushCity(input)
+        setInput("") 
     }
 
     return (
-        
-        <div>           
-            <div className={style.navbar}>
-            <div className={style.navigation}>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
+        <nav className="navbar navbar-light bg-dark">
+            <div className="container-fluid">
+                <div >
+                    <NavLink exact to="/" activeClassName={`btn btn-sm ${style.btnapp}`}>Home</NavLink>
+                    <NavLink to="/about" activeClassName={`btn btn-sm ${style.btnapp}`}>About</NavLink>
+                </div>
+                <form className="d-flex" onSubmit={pushIt}>
+                    <div className="col-sm-6">
+                        <input type="text" placeholder="Ingresar ciudad" onChange={modInput} value={input} className="form-control form-control-sm me-2" id='a' />
+
+                    </div>
+                    <div className="col-sm-6">
+                        <input type="submit" className={`btn btn-sm ${style.btnapp}`} value="Submit" />
+
+                    </div>
+                </form>
             </div>
-            <form onSubmit={pushIt}>
-                <input type="text" placeholder="Ingresar ciudad" onChange={modInput} value={input} />
-                <input type="submit" className={style.btnAdd} value="Submit" />
-            </form> 
-            </div>
-        </div>
+        </nav>
     )
 }

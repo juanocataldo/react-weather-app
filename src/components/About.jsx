@@ -19,6 +19,20 @@ export default function Default(){
                     This is my first app, probably a simple one, but it will be the first step of my whole developer career!</p>                    
                 </div>
             </div>
+                <div className="row m-4 feed presentCard">
+                    <h4>Contact</h4>
+                    <div className="social col-sm">
+                    <div className="socialBlock">
+                    <a href="http://instagram.com/juanocataldo" class="fa fa-instagram"></a>
+                    <span style={{color:'rgb(251, 44, 99)'}}>Instagram</span>
+                    </div>
+                    <div className="socialBlock">
+                    <a href="https://www.linkedin.com/in/juan-manuel-cataldo-pavan-a68a9720" class="fa fa-linkedin"></a>
+                    <span style={{color:'aqua'}}>Linkedin</span>
+                    </div>
+                    </div>
+                    
+                </div>
         </div>
     )
 

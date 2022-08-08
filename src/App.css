@@ -44,6 +44,6 @@
 }
 
 body{
-  background: rgb(134,134,134);
-  background: radial-gradient(circle, rgba(134,134,134,1) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(43,43,43);
+background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(55,52,52,1) 20%, rgba(68,68,68,1) 50%, rgba(55,52,52,1) 80%, rgba(43,43,43,1) 100%);
 }
